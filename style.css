@@ -75,6 +75,9 @@ span{
 .plan a{
     margin-left: 71px;
 }
+.plan a:hover{
+    text-decoration: none;
+}
 .buttons{
     display: flex;
     flex-direction: column;
