@@ -1,12 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
 :root{
     --Pale-blue: hsl(225, 100%, 94%);
     --Bright-blue: hsl(245, 75%, 52%);
     --Very-pale-blue: hsl(225, 100%, 98%);
     --Desaturated-blue: hsl(224, 23%, 55%);
     --Dark-blue: hsl(223, 47%, 23%);
-};
+}
 
-body{
+*{
     font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* margin-left: 15px; */
+}
+main {
+    height: 100vh;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: var(--Pale-blue);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+h1,h3{
+    color: var(--Dark-blue);
+}
+p{
+    color: var(--Desaturated-blue);
+}
+section{ 
+    width: 375px;
+    background: white;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:  4px 8px rgba(0,0,0,0.07);
+
+}
+.infos{
+    padding: 11px 25px;
+}
+.image{
+    max-width: 100%;
+}
+
+.plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--Very-pale-blue);
+    border-radius: 15px;
+    margin-bottom: 48px;
+    margin-top: 48px;
+}
+.price{
+    margin-left: 15px;
+}
+span{
+    margin-bottom: 15px;
+    display: block;
+}
+.plan a{
+    margin-left: 71px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttons a{
+    margin: 40px 0;
+}
+.buttons input[type=submit]{
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    background-color: var(--Bright-blue);
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;;
+}
+span{
+    color: var(--Desaturated-blue);
+}
+.buttons a{
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+}
+
+.buttons input[type=submit]:hover{
+    background-color: var(--Bright-blue);
+    cursor: pointer;
+
 }
